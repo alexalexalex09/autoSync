@@ -80,26 +80,6 @@ int g_ownPeerListConfirmed = 0;
 uint8_t g_peers[MAX_PEERS][6] = {0};
 
 /**
- * @brief a global array of peers used to reorder turns
- *
- *
- */
-uint8_t g_tempPeers[MAX_PEERS][6] = {0};
-
-/**
- * @brief the current active player's mac address *
- *
- */
-uint8_t g_currentPlayer[6] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-
-/**
- * @brief a variable to hold the first player's address as soon as it's set
- *
- *
- */
-uint8_t g_firstPlayer[6] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-
-/**
  * @brief a structure to send data, which must be matched on the receiving side.
  *
  * uint8_t address[6]:
